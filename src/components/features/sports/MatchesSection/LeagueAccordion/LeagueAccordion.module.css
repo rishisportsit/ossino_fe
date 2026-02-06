@@ -1,0 +1,9 @@
+.loadMoreIcon {
+  width: 1rem;
+  height: 1rem;
+  mask-image: url(/icons/arrowDown.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: var(--special-2);
+}

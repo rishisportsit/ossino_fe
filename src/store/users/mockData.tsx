@@ -1,0 +1,67 @@
+
+import { initialBalances } from 'constants/currencies';
+import userAvatarIcon from '/icons/userAvatar.svg?url';
+import type { User } from './slice';
+
+export const users: User[] = [
+  {
+    id: 1,
+    userName: 'Tony_Testimony',
+    pointsBalance: 0,
+    balances: initialBalances,
+    lifetimePoints: 0,
+    toNextRank: 20,
+    progress: 65,
+    levelImage: '/images/levels/sprite.png',
+    avatar: userAvatarIcon,
+    isVip: true,
+  },
+  {
+    id: 2,
+    userName: 'Teeas85',
+    pointsBalance: 0,
+    balances: initialBalances,
+    lifetimePoints: 0,
+    toNextRank: 20,
+    progress: 65,
+    levelImage: '/images/levels/sprite.png',
+    avatar: userAvatarIcon,
+    isVip: true,
+  },
+  {
+    id: 3,
+    userName: 'Ted_Read',
+    pointsBalance: 0,
+    balances: initialBalances,
+    lifetimePoints: 0,
+    toNextRank: 20,
+    progress: 65,
+    levelImage: '/images/levels/sprite.png',
+    avatar: userAvatarIcon,
+    isVip: true,
+  },
+  {
+    id: 4,
+    userName: 'Ted',
+    pointsBalance: 0,
+    balances: initialBalances,
+    lifetimePoints: 0,
+    toNextRank: 20,
+    progress: 65,
+    levelImage: '/images/levels/sprite.png',
+    avatar: userAvatarIcon,
+    isVip: true,
+  },
+  {
+    id: 5,
+    userName: 'user1291',
+    pointsBalance: 0,
+    balances: initialBalances,
+    lifetimePoints: 0,
+    toNextRank: 20,
+    progress: 65,
+    levelImage: '/images/levels/sprite.png',
+    avatar: userAvatarIcon,
+    isVip: true,
+  },
+];

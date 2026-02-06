@@ -1,0 +1,2 @@
+export const LOCKED_ODDS_THRESHOLD = 1.02;
+export const TOP_MATCH_SECTION_MARKET_TEMPLATE_ID = '1';

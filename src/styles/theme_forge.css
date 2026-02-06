@@ -1,0 +1,320 @@
+/**
+ * Central Theme Configuration
+ * All primary colors, gradients, and theme-specific values in one place
+ * Change values here to switch entire project theme
+ */
+
+:root {
+  /* === PRIMARY COLORS === */
+  --primary-1: 35 96% 56%;
+  --primary-2: 35 96% 70%;
+  --primary-3: 35 96% 88%;
+
+  /* === SECONDARY COLORS === */
+  --secondary-1: 9 77% 55%;
+  --secondary-2: 9 77% 68%;
+  --secondary-3: 9 77% 85%;
+
+  /* === STATUS COLORS === */
+  --status-info: 35 96% 56%;
+  --status-success: 142 65% 48%;
+  --status-warning: 35 96% 56%;
+  --status-error-200: 9 77% 55%;
+  --status-error-100: 9 77% 60%;
+
+  /* === ACCENT COLORS === */
+  --accent-1: 35 96% 56%;
+  --accent-2: #F9A826;
+  --accent-3: #E55934;
+  --accent-4: #FFB547;
+  --accent-live: #E55934;
+  --accent-positive: #4CAF50;
+  --accent-negative: #E55934;
+
+  /* === COMMONLY USED GRADIENT COLORS === */
+  --gradient-secondary-dark-1: #3e2b22;
+  --gradient-secondary-dark-2: #4A3933;
+  --gradient-secondary-dark-3: #5E4A42;
+  --gradient-third-1: #e55934;    
+  --gradient-third-2: #8B5A3C;      
+  --gradient-third-3: #4A3933;    
+  --gradient-third-4: #5E4A42;      
+
+  /* === SECONDARY LIGHT VARIANTS (Sports/Gaming) === */
+  --secondary-light-1: #FFECD1;
+  --secondary-light-2: #EB9715;
+  --secondary-light-3: #FFB547;
+  --secondary-light-4: #F9A826;
+  --secondary-light-5: #F59E1B;
+  --secondary-light-6: #E8941A;
+  --secondary-light-7: #DB8B19;
+
+  /* === TRANSACTION STATUS COLORS === */
+ --state-positive-bg: #04CC6F1A;
+--state-positive: #04CC6F;
+--state-warning-bg: #FFCB451A;
+--state-warning: #FFCB45;
+--state-negative-bg: #F158581A;
+--state-negative: #F15858;
+
+
+  /* === BASE SCALE === */
+ --base-100: #F5EDE5;
+--base-200: #E8D5C4;
+--base-300: #D4BDA8;
+--base-400: #B8997D;
+--base-500: #9C7F65;
+--base-600: #7A5E4A;
+--base-620: #6E5643;
+--base-630: #634E3D;
+--base-640: #594638;
+--base-645: #544135;
+--base-650: #4A3933;
+--base-670: #3F322C;
+--base-675: #3A2E28;
+--base-680: #352A25;
+--base-690: #2F2621;
+--base-700: #2A221E;
+--base-725: #2F2823;
+--base-735: #211C18;
+--base-750: #24201D;
+--base-775: #181614;
+--base-800: #141311;
+--base-850: #0F0D0C;
+--base-860: #0B0A09;
+--base-900: #060505;
+--borderdefault: #5E4A42;
+
+
+  /* === SPECIAL COLORS === */
+  --special-1: #4A3933;
+  --special-2: #F9A826;
+
+  /* === BACKGROUND COLORS === */
+  --bg-primary: #1C1916;
+  --bg-secondary: #2A221E;
+  --bg-third: #4A3933;
+
+  /* === TEXT COLORS === */
+  --text-primary: #F5EDE5;
+  --text-secondary: #E8D5C4;
+  --text-third: #B8997D;
+
+  /* === SCROLLBAR COLORS === */
+  --scrollbar-thumb: #5E4A42;
+--scrollbar-track: #2A221E;
+--scrollbar-thumb-hover: #F9A826;
+--scrollbar-thumb-vip: #E55934;
+--scrollbar-track-vip: #4A3933;
+
+
+  /* === COMPONENT SPECIFIC COLORS === */
+  --range-accent: #F9A826;
+--qr-bg: #F5EDE5;
+--qr-fg: #4A3933;
+--switch-on: #F9A826;
+--switch-off: #4A3933;
+
+
+  /* === GRADIENTS === */
+  --gradient-primary: linear-gradient(90deg, #F9A826 0%, #E55934 100%);
+--gradient-secondary: linear-gradient(90deg, #6B3E2E 0%, #4A3933 100%);
+--gradient-third: linear-gradient(90deg, #8B5A3C 0%, #6B3E2E 100%);
+--gradient-button: linear-gradient(107.42deg, hsl(var(--primary-1)) 0%, hsl(var(--secondary-1)) 105%);
+  
+  /* Fourth Gradient */
+  --gradient-fourth: linear-gradient(160deg, #4A3933 0%, #3A2E28 25%, #2A221E 50%, #3A2E28 75%, #4A3933 100%);
+  
+  /* Pop-up Gradients */
+  --gradient-popup: linear-gradient(137.53deg, #4A3933 -0.82%, #2A221E 46.9%, #4A3933 100.11%);
+--gradient-popup-success: linear-gradient(137.53deg, #4A3933 -0.82%, #3A2E28 24.41%, #2A221E 49.65%, #3A2E28 74.88%, #4A3933 100.11%);
+--gradient-popup-error: linear-gradient(137.53deg, #5E342E -0.82%, #4A2E28 46.9%, #5E342E 100.11%);
+  
+  /* Referral Card Gradients */
+  --gradient-refer-1: linear-gradient(4.6deg, #6B3E2E 24.36%, #F9A826 94.03%);
+--gradient-refer-2: linear-gradient(175.94deg, var(--gradient-secondary-dark-1) 3.06%, var(--gradient-secondary-dark-2) 96.51%);
+  
+  /* Promotion Card Gradients */
+  --gradient-welcome-bonus: linear-gradient(4.6deg, #4A3933 24.36%, #F9A826 94.03%);
+--gradient-boost-level: linear-gradient(180deg, #8B5A3C 0%, #F9A826 82%);
+--gradient-daily-races: linear-gradient(180deg, var(--gradient-third-1) 0%, var(--gradient-third-2) 82%);
+  
+  /* User Card Gradients */
+  --gradient-user-card: linear-gradient(13.39deg, #FFECD1 32.68%, #FFC872 52.45%, #F9A826 67.1%, #E8941A 82.34%);
+  
+  /* Play and Earn Gradient */
+  --gradient-play-earn: linear-gradient(13.39deg, #E8D5C4 32.68%, #B8997D 52.45%, #8B5A3C 67.1%, #6B3E2E 82.34%);
+  
+  /* Settings Layout Gradient */
+  --gradient-settings: linear-gradient(90deg, rgba(28, 25, 22, 0) 0%, #1C1916 91.4%);
+  
+  /* Game Card Gradient */
+  --gradient-game-card: linear-gradient(to right, #2A221E 0%, #E8D5C4 50%, #2A221E 100%);
+  
+  /* Reward Card Gradients */
+  --gradient-reward-bg: linear-gradient(to bottom, var(--gradient-third-3) 0%, var(--gradient-third-4) 80%);
+  --gradient-player-prop: linear-gradient(180deg, #3e2b22 5.25%, #4A3933 73.73%);
+
+  /* Sports Promotion Gradients */
+  --gradient-sports-promo-1: linear-gradient(4.6deg, #4A3933 24.36%, #F9A826 94.03%);
+--gradient-sports-promo-2: linear-gradient(180deg, #6B3E2E 0%, #8B5A3C 82%);
+--gradient-sports-promo-3: linear-gradient(180deg, var(--gradient-third-1) 0%, var(--gradient-third-2) 82%);
+--gradient-sports-promo-4: linear-gradient(180deg, #8B5A3C 0%, #F9A826 82%);
+
+  /* Phoenix Icon Colors */
+  --phoenix-color-1: #E55934;
+  --phoenix-color-2: #F9A826;
+  --phoenix-color-3: #FFB547;
+  --phoenix-color-4: #4A3933;
+
+  /* === SHADOW COLORS === */
+  --shadow-1: rgba(249, 168, 38, 0.25);
+  --shadow-2: rgba(74, 57, 51, 0.35);
+  --shadow-3: rgba(229, 89, 52, 0.32);
+  --shadow-4: rgba(249, 168, 38, 0.22);
+
+  /* === SWIPER PAGINATION COLORS === */
+  --swiper-bullet: #B8997D;
+  --swiper-bullet-active: #F9A826;
+
+    /*-- HEADER BACKGROUND COLOR === */
+  --bg-header: var(--bg-primary);
+ 
+  /*--Sports Home page Banner Gradient===*/
+  --gradient-sports-home-banner: linear-gradient(135deg, #4A3933 0%, #6B3E2E 50%, #4A3933 100%);
+ 
+  /*--SVG ICON COLORS===*/
+  --icon-placeholder: #7F7F7F;
+  --icon-primary: var(--primary-1);
+  --icon-secondary: var(--secondary-2);
+
+  /*--BORDER DEFAULT COLOR===*/
+  --borderdefault-1: #5E4A42;
+
+  /*--generic variables for tailwind compatibility--*/
+  --body-txtColor-1: #ffffff;
+  --body-txtColor-1-rgb: 255 255 255;
+  --body-txtColor-2: #000000;
+  --body-txtColor-2-rgb: 0 0 0;
+  
+  --background-1: rgb(255, 255, 255);
+  --background-1-rgb: 255 255 255;
+  --background-2: #000000;
+  --background-2-rgb: 0 0 0;
+
+  --border-1: #ffffff;
+  --border-1-rgb: 255 255 255;
+
+  --stroke-1: #ffffff;
+  --fill-1: #ffffff;
+
+  --stroke-2: #000000;
+  --fill-2: #000000;
+
+  --fill-base-500: var(--base-500);
+  --fill-base-300: var(--base-300);
+  --fill-base-100: var(--base-100);
+  --fill-iconPrimary: var(--text-primary);
+  
+  /*--banner specific colors--*/
+   --banner-bg: #ffffff;
+    --banner-bg-1: #000000;
+    --banner-textColor: #000000;
+    --banner-textColor-1: #ffffff;
+
+    /*--button text colors--*/
+    --btn-textColor:#060505;
+
+    /*--background with opacity--*/
+    --base-700-rgb: 42 34 30;
+}
+
+/* Helper classes for easy theme access */
+.bg-primary { background-color: var(--bg-primary); }
+.bg-secondary { background-color: var(--bg-secondary); }
+.bg-third { background-color: var(--bg-third); }
+
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-third { color: var(--text-third); }
+
+.gradient-button { background: var(--gradient-button); }
+.gradient-fourth{ background: var(--gradient-fourth); }
+.gradient-popup { background: var(--gradient-popup); }
+.gradient-popup-success { background: var(--gradient-popup-success); }
+.gradient-popup-error { background: var(--gradient-popup-error); }
+
+.bg-header { background-color: var(--bg-header);}
+.icon-placeholder { fill: var(--icon-placeholder); }
+
+/*--promotion(sports/casino) banners Gradients--*/
+.gradient-promotion1 { background: var(--gradient-sports-promo-2); }
+.gradient-promotion2 { background: linear-gradient(var(--gradient-third-1)0%, var(--gradient-third-2) 100%);}
+.gradient-promotion3 { background: linear-gradient(4.6deg,var(--gradient-secondary-dark-2) 24.36%,var(--gradient-secondary-dark-1) 94.03%);}
+
+.gradient-refer-1 { background: var(--gradient-refer-1); }
+.gradient-refer-2 { background: var(--gradient-refer-2); }
+
+.gradient-welcome-bonus { background: var(--gradient-welcome-bonus); }
+.gradient-boost-level { background: var(--gradient-boost-level); }
+.gradient-daily-races { background: var(--gradient-daily-races); }
+
+.gradient-user-card { background: var(--gradient-user-card); }
+.gradient-play-earn { background: var(--gradient-play-earn); }
+
+.gradient-settings { background: var(--gradient-settings); }
+
+.gradient-game-card { background: var(--gradient-game-card); }
+
+.gradient-reward-bg { background: var(--gradient-reward-bg); }
+.gradient-player-prop { background: var(--gradient-player-prop); }
+
+/*--icons fill values--*/
+.fill-secondary-light-2 { fill: var(--secondary-light-2); }
+.fill-accent-3 { fill: var(--accent-3); }
+
+.gradient-fade-bottom {background: linear-gradient(to bottom, transparent, var(--bg-primary));}
+
+/*--generic classes for tailwind compatibility--*/
+.body-txtColor-1 {color:var(--body-txtColor-1);}
+.body-txtColor-2 {color:var(--body-txtColor-2);}
+.background-1 {background:var(--background-1);}
+.background-2 {background:var(--background-2);}
+.border-1 {border-color:var(--border-1);}
+.stroke-1 {stroke:var(--stroke-1);}
+.stroke-2 {stroke:var(--stroke-2);}
+.fill-1 {fill:var(--fill-1);}
+.fill-2 {fill:var(--fill-2);}
+.fill-base-500 {fill:var(--fill-base-500);}
+.fill-base-300 {fill:var(--fill-base-300);}
+.fill-base-100 {fill:var(--fill-base-100);}
+.fill-iconprimary {fill:var(--fill-iconPrimary);}
+
+/*--banner specific classes--*/
+.banner-bg {background:var(--banner-bg);}
+.banner-bg-1 {background:var(--banner-bg-1);}
+.banner-textColor {color:var(--banner-textColor);}
+.banner-textColor-1 {color:var(--banner-textColor-1);}
+
+/*--button text color--*/
+.btn-textColor {color:var(--btn-textColor);}
+
+.bg-base-700-opacity-30 {
+  background-color: rgb(var(--base-700-rgb) / 0.30);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

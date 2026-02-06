@@ -1,0 +1,11 @@
+.notification-markdown em {
+  @apply text-xs leading-4 text-base-300 font-regular not-italic;
+}
+
+.notification-markdown h3 {
+  @apply mt-8 mb-2;
+}
+
+.notification-markdown h2 {
+  @apply m-0;
+}

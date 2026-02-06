@@ -1,0 +1,53 @@
+.buttons_wrapper::before,
+.buttons_wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 71px;
+  pointer-events: none;
+  display: none;
+}
+
+.buttons_wrapper.show_before::before {
+  display: none;
+  left: -1px;
+  height: auto;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.buttons_wrapper.show_after::after {
+  display: none;
+  height: 100%;
+  right: -1px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.button {
+  width: auto;
+  height: 40px;
+  line-height: 15.6px;
+  font-style: black !important;
+  font-size: 12px;
+  font-weight: normal;
+  padding-inline: 16px;
+  padding-block: 12px;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  color: red;
+  border: 1px solid transparent;
+}
+
+.buttonActive {
+  border-color: #d8ff68;
+  color: #d8ff68;
+  line-height: 14.4px;
+}

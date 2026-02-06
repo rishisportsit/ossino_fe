@@ -1,0 +1,16 @@
+export const ROUTES = {
+  providers: '/providers',
+  favorites: '/favorites',
+  categories: '/categories',
+  originals: '/categories/originals',
+  liveCasino: '/categories/live-casino',
+  slots: '/categories/slots',
+  newReleases: '/categories/new-releases',
+  blackJack: '/categories/black-jack',
+  roulette: '/categories/roulette',
+  baccarat: '/categories/baccarat',
+  gameDetails: '/game-details',
+  search: '/discovery-search',
+  transactions: '/transactions',
+  loyalty: '/loyalty',
+} as const;

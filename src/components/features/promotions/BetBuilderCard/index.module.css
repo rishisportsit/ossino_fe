@@ -1,0 +1,14 @@
+.bg-gradient {
+  background: linear-gradient(4.6deg, #3f803c 24.36%, #011504 94.03%);
+}
+
+.lightning-gradient {
+  background: linear-gradient(
+    13.39deg,
+    #dbffc5 32.68%,
+    #acfe7a 52.45%,
+    #65d321 67.1%,
+    #5ec81d 82.34%
+  );
+  backdrop-filter: blur(70px)
+}

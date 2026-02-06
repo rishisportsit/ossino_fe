@@ -1,0 +1,9 @@
+.bg-gradient {
+  background: 
+    url('/images/sports/promotions/WelcomeBonusCard/bg.png'),
+    radial-gradient(ellipse 200% 100% at 50% 20%, #8619e2 0%, #5a0d8a 30%, #2d0a4a 70%, #13041f 100%);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: overlay;
+}

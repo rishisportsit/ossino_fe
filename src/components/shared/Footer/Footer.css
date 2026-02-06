@@ -1,0 +1,8 @@
+.footer-container li,
+.footer-container p {
+  @apply text-base-400;
+}
+
+.footer-container .white-p {
+  @apply text-body-txtColor-1;
+}

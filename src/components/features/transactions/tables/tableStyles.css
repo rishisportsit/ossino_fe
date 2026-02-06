@@ -1,0 +1,22 @@
+.wrapper::before,
+.wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 71px;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #01010100, transparent);
+  opacity: 0;
+}
+
+.wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #01010100, transparent);
+  opacity: 0;
+}

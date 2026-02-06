@@ -1,0 +1,10 @@
+.bg-gradient {
+  background: 
+    url('/images/sports/promotions/MatchOfTheDay/bgl.png'),
+    url('/images/sports/promotions/MatchOfTheDay/bgr.png'),
+    linear-gradient(135deg, #1a4d1a 0%, #2d5a2d 50%, #1a4d1a 100%);
+  background-size: auto, auto, cover;
+  background-position: top left, bottom right, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-blend-mode: overlay, overlay, normal;
+}

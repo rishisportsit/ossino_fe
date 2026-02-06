@@ -1,0 +1,11 @@
+.bg-gradient {
+  background: 
+    var(--gradient-sports-home-banner);
+  background-size: auto, auto, cover;
+  background-position: top left, bottom right, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-blend-mode: overlay, overlay, normal;
+}
+
+/* url('/images/sports/promotions/MatchOfTheDay/bgl.png'),
+    url('/images/sports/promotions/MatchOfTheDay/bgr.png'), */

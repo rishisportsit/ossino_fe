@@ -1,0 +1,8 @@
+.sportIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #d8ff68;
+}

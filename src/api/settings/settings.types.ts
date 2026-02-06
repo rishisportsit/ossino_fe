@@ -1,0 +1,213 @@
+export type UserOtherInfo = {
+  id: number | null;
+  address: string | null;
+  userId: number | null;
+  country: string | null;
+  phone: string | null;
+  email: string | null;
+  currency: string | null;
+  brand: string | null;
+  city: string | null;
+  cid: number;
+  chid: number;
+  state: string | null;
+  zipCode: string | null;
+  affliateBtag: string | null;
+  playerSegment: string | null;
+  stakeFactor: number;
+  paymentEnabled: boolean;
+  emailVerified: boolean;
+  mobileVerified: boolean;
+  countryCode: string | null;
+  keepLevelSticky: boolean;
+  affliateSiteName: string | null;
+  firstDeposit: number;
+  createdDate: string;
+  updatedAt: string;
+  currencyCode: string | null;
+  profilePath: string | null;
+  mfaenabled: boolean;
+  onBoardingTourCompleted: boolean;
+  cashOutEnabled: boolean;
+};
+
+export type UserCommPreference = {
+  id: number | null;
+  promotionalEmail: boolean | null;
+  pushNotificationphone: boolean | null;
+  termsAndConditions: boolean;
+  sms: boolean;
+  phoneCalls: boolean;
+  user: null;
+  createdDate: string;
+  updatedAt: string;
+};
+
+export type UserLimit = {
+  id: number | null;
+  user: null;
+  dailyDepositLimit: number;
+  weeklyDepositLimit: number;
+  monthlyDepositLimit: number;
+  dailyWithdrawalLimit: number;
+  weeklyWithdrawalLimit: number;
+  monthlyWithdrawalLimit: number;
+  dailyStakeLimit: number;
+  weeklyStakeLimit: number;
+  monthlyStakeLimit: number;
+  timeLimit: number;
+  selfExcludePeriod: string;
+  selfExclusion: string;
+  createdDate: string;
+  updatedAt: string;
+  dailyDepositLimitUpdatedAt: string;
+  weeklyDepositLimitUpdatedAt: string;
+  monthlyDepositLimitUpdatedAt: string;
+  dailyWithdrawalLimitUpdatedAt: string;
+  weeklyWithdrawalLimitUpdatedAt: string;
+  monthlyWithdrawalLimitUpdatedAt: string;
+  dailyStakeLimitUpdatedAt: string;
+  weeklyStakeLimitUpdatedAt: string;
+  monthlyStakeLimitUpdatedAt: string;
+  timeLimitUpdatedAt: string;
+  selfExclusionUpdatedAt: string;
+  withdrawEnabled: boolean;
+  depositEnabled: boolean;
+  currencyCode: string | null;
+};
+
+export type GetPlayerDetailsResponseData = {
+  userId: number;
+  userName: string;
+  firstName: string;
+  lastName: string;
+  nickName: string;
+  surName: string | null;
+  role: string;
+  dob: string;
+  vip: boolean;
+  accountStatus: string;
+  kycStatus: string;
+  idKycStatus: string;
+  userType: string;
+  addressKycStatus: string;
+  createdDate: string;
+  userRefCode: string;
+  promoCode: string;
+  updatedAt: string;
+  countryCode: string;
+  gender: string | null;
+  userOtherInfo: UserOtherInfo;
+  userCommPreference: UserCommPreference;
+  userLimit: UserLimit;
+  userSystemTags: string;
+  userCustomTags: string;
+  withDrawalKYCLimit: number;
+  totalWithdrawals: number;
+  totalDeposits: number;
+  casinoFavStakeLimit: number;
+  totalCasinoStake: number;
+  casinoFavEnabled: boolean;
+  reKyc: boolean;
+  brand: string | null;
+};
+
+export type UpdatePlayerDetailsRequest = {
+  firstName?: string;
+  lastName?: string;
+  email?: string;
+  dob?: string;
+  city?: string;
+  nickName?: string;
+};
+
+export type SelfExclusionRequest = {
+  accessToken: string;
+  selfExclusion: string;
+  selfExclusionReason: string;
+  currencyCode: string;
+};
+
+export type SelfExclusionResponseData = {
+  userId: number;
+  dailyDepositLimit: number | null;
+  weeklyDepositLimit: number | null;
+  monthlyDepositLimit: number | null;
+  dailyWithdrawalLimit: number | null;
+  weeklyWithdrawalLimit: number | null;
+  monthlyWithdrawalLimit: number | null;
+  dailyStakeLimit: number | null;
+  weeklyStakeLimit: number | null;
+  monthlyStakeLimit: number | null;
+  timeLimit: number | null;
+  selfExcludePeriod: string;
+  selfExclusion: string;
+  createdDate: string | null;
+  updatedAt: string;
+  dailyDepositLimitUpdatedAt: string | null;
+  weeklyDepositLimitUpdatedAt: string | null;
+  monthlyDepositLimitUpdatedAt: string | null;
+  dailyWithdrawalLimitUpdatedAt: string | null;
+  weeklyWithdrawalLimitUpdatedAt: string | null;
+  monthlyWithdrawalLimitUpdatedAt: string | null;
+  dailyStakeLimitUpdatedAt: string | null;
+  weeklyStakeLimitUpdatedAt: string | null;
+  monthlyStakeLimitUpdatedAt: string | null;
+  timeLimitUpdatedAt: string | null;
+  selfExclusionUpdatedAt: string;
+  withdrawEnabled: boolean;
+  depositEnabled: boolean;
+  currencyCode: string;
+  selfExclusionPeriod: string | null;
+  selfExclusionReason: string;
+  permanentlyExcluded: boolean;
+  baseCurrencyRate: number;
+};
+
+export type SelfExclusionResponse = {
+  code: string;
+  message: string;
+  targetSystem: string;
+  result: {
+    status: number;
+    data: SelfExclusionResponseData;
+    message: string;
+  };
+};
+
+export type UpdatePlayerResponse = {
+  result: {
+    status: number;
+    data: {
+      userId: number;
+      userName: string;
+      firstName: string;
+      lastName: string;
+      nickName: string;
+      surName: string | null;
+      role: string;
+      dob: string;
+      vip: boolean;
+      accountStatus: string;
+      kycStatus: string;
+      idKycStatus: string;
+      userType: string;
+      addressKycStatus: string;
+      createdDate: string;
+      userRefCode: string;
+      promoCode: string;
+      updatedAt: string;
+      countryCode: string;
+      gender: string | null;
+      totpEnable: boolean;
+      totalDeposits: number;
+      userSystemTags: string;
+      totalWithdrawals: number;
+      withDrawalKYCLimit: number;
+    };
+    message: string;
+  };
+  code: string;
+  message: string;
+  statusCode: number;
+};

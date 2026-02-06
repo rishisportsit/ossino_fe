@@ -1,0 +1,21 @@
+.card {
+  width: 40px;
+  transition: width 0.3s ease;
+}
+
+.open {
+  width: 100%;
+}
+
+.label {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 40px);
+}
+
+.labelOpen {
+  opacity: 1;
+}
+

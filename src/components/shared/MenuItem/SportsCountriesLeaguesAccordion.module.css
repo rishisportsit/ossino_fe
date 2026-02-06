@@ -1,0 +1,41 @@
+.sportButton {
+  width: 40px;
+  transition: width 0.3s ease;
+}
+
+.sportButtonOpen {
+  width: 100%;
+  height: auto;
+}
+
+.sportLabel {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 40px);
+}
+
+.sportLabelOpen {
+  opacity: 1;
+}
+
+.segmentButton {
+  transition: width 0.3s ease;
+}
+
+.segmentButtonOpen {
+  width: 100%;
+}
+
+.segmentLabel {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.segmentLabelOpen {
+  opacity: 1;
+}
